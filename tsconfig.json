@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "target": "es2016",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "declarationDir": "dist/dts",
+        "strict": true,
+        "skipLibCheck": true,
+        "types": ["types-base"],
+        "jsx": "react-jsx",
+        "baseUrl": "../",
+        "paths": {
+            "@gdi/app-mixer": ["gdi-app-mixer"],
+            "@gdi/store-business-base": ["gdi-store-business-base"],
+            "@gdi/store-mixer": ["gdi-store-mixer"],
+            "@gdi/template-gdi": ["gdi-template-gdi"],
+            "@gdi/web-base-ui": ["gdi-web-base-ui"],
+            "@gdi/web-ui": ["gdi-web-ui"],
+            "@gdi/web-forms": ["gdi-web-forms"],
+            "@gdi/platformer": ["platformer"],
+            "redux-connected": ["redux-connected"],
+            "igrid": ["igrid"]
+        }
+    },
+    "include": ["src-admin/*.ts", "test/*.ts"]
+}
